@@ -1,0 +1,7 @@
+01. Total Employees = DISTINCTCOUNT(Fact_HR[EmployeeNumber])
+02. Attrition Count = CALCULATE([Total Employees], Fact_HR[Attrition] = "Yes")
+03. Attrition Rate % = DIVIDE([Attrition Count], [Total Employees])
+04. Active Employees = [Total Employees] - [Attrition Count]
+05. Avg Job Satisfaction = AVERAGE(Fact_HR[JobSatisfaction])
+06. Avg Monthly Income = AVERAGE(Fact_HR[MonthlyIncome])
+07. Avg Work-Life Balance = AVERAGE(Fact_HR[WorkLifeBalance])
